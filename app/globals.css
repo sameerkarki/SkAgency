@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+    .about-text {
+        display: list-item; /* This has to be "list-item"                                          */
+        margin-left : 1em; 
+    }
+    
