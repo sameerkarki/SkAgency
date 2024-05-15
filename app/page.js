@@ -76,7 +76,7 @@ export default function Home() {
         </div>
         <div className="right flex flex-col gap-8">
           <h2 className="about-t text-4xl font-medium">Sk Digital Agency</h2>
-          <p className="about-t text-2xl max-w-[700px] font-extralight">At Sk Digital Agency, we create eye-catching websites to boost your business's digital presence. We provide services to clients from all over the globe. Hire us now to boost your digital presence.</p>
+          <p className="about-t text-2xl max-w-[700px] font-extralight">At Sk Digital Agency, we create eye-catching websites to boost your  digital presence. We provide services to clients from all over the globe. Hire us now to boost your digital presence.</p>
         </div>
       </section>
 
