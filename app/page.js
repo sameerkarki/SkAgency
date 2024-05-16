@@ -17,13 +17,6 @@ export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger); 
 
-
-  
-  });
-
-
-
-  useGSAP(() => {
     const text = SplitType.create('.ht')
     var char = text.words
    gsap.from(char, {
@@ -90,7 +83,9 @@ export default function Home() {
     delay: 1
    })
 
+  
   });
+
 
   return (
     <>
