@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       <section data-scroll data-scroll-speed="0.5" id="work" className=" 2xl:min-h-[50vh] mb-20 How-we-work min-h-[70vh] flex flex-col justify-evenly items-center">
-        <h2 className="work-text text-3xl font-bold">How we work</h2>
+        <h2 className="work-text text-3xl font-bold mb-4">How we work</h2>
         <div className="items flex flex-row overflow-x-hidden flex-wrap gap-5 justify-center items-center">
           <div className="item min-w-[300px] border-2 p-3">
             <h1 className="text-3xl font-semibold">01</h1>
