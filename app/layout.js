@@ -10,6 +10,14 @@ const inter = Montserrat({ subsets: ["latin"],weight: '300' });
 export const metadata = {
   title: "Sk digital Agency",
   description: "The best web agency in Nepal",
+  keywords: ["web agency in Nepal","website agency in Nepal","How to make a website in Nepal","How to make a website"],
+  icons: {
+    icon: '/public/lg.png',
+    apple: "/public/lg.png",
+    other: {
+      url: '/public/lg.png'
+    }
+  }
   
 };
 
