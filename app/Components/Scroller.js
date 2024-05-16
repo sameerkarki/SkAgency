@@ -1,3 +1,4 @@
+"use client"
 import { ReactLenis, useLenis } from 'lenis/react'
 
 function Scroller({children}) {
@@ -7,7 +8,7 @@ function Scroller({children}) {
 
   return (
     <ReactLenis root options={{
-        lerp: 0.04
+        lerp: 0.05
     }}>
       {children}
     </ReactLenis>
