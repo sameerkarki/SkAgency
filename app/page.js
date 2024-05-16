@@ -7,7 +7,6 @@ import { useEffect, useRef } from "react";
 import ill from "@/public/ill.png";
 import Btn from "./Components/Btn";
 import './globals.css';
-import LocomotiveScroll from 'locomotive-scroll';
 
 import social from "@/public/icons/social.svg";
 import design from '@/public/icons/design.svg';
@@ -18,7 +17,6 @@ export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger); 
 
-    const scroll = new LocomotiveScroll();
 
   
   });

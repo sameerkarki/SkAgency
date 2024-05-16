@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Head from "next/head";
+import Scroller from "./Components/Scroller";
 
 const inter = Montserrat({ subsets: ["latin"],weight: '300' });
 
@@ -26,8 +27,10 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light" className="overflow-x-hidden">
      
       <body className={inter.className}>
+<Scroller>
+<Navbar/> {children} <Footer/>
+</Scroller>
 
-  <Navbar/> {children} <Footer/>
 
       
 
