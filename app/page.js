@@ -96,7 +96,7 @@ export default function Home() {
         <Image src={ill} width={600} className="image" alt="image"/>
       </section>
 
-      <section  data-scroll data-scroll-speed="0.1" id="about" className="about min-h-[70vh]  flex  flex-col md:flex-row justify-evenly items-center text-center">
+      <section  data-scroll data-scroll-speed="0.1" id="about" className="about min-h-[75vh]  flex  flex-col md:flex-row justify-evenly items-center text-center">
         <div className="left">
           <h2 className="about-text dot text-3xl font-semibold">About</h2>
         </div>
