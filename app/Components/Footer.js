@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-slate-100 text-black ">
     <aside>
-        <Image src={logo} width={100}/>
+        <Image src={logo} width={100} alt="logo"/>
       <p className="font-bold ">
         Sk Digital Agency
       </p> 

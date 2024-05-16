@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className='flex justify-evenly items-center w-full fixed bg-slate-50 top-0  z-50'>
       <div className="logo">
-        <Image src={logo} width={100} />
+        <Image src={logo} width={100} alt='logo' />
       </div>
 
       <ul className=' gap-8 font-semibold hidden lg:flex '>

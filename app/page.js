@@ -98,9 +98,9 @@ export default function Home() {
     <>
       <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:min-h-[60vh] min-h-[85vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
         <h1 className="ht text-[3.5rem] tracking-wider font-light font-sans text-gray-900  ">Unleash Your Digital Potential with Us</h1>
-        <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business online presence with sk digital agency</p>
+        <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business&apos;s online presence with sk digital agency</p>
         <Btn  text="connect with us" link="https://wa.me/9841528597"/>
-        <Image src={ill} width={600} className="image"/>
+        <Image src={ill} width={600} className="image" alt="image"/>
       </section>
 
       <section  data-scroll data-scroll-speed="0.1" id="about" className="about  2xl:min-h-[50vh]  min-h-[80vh] flex  flex-col md:flex-row justify-evenly items-center text-center">
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
   <section className="Hire Us flex flex-col gap-12 min-h-[28vh] text-center">
-  <h2 className="text-3xl font-bold">Let's Work Together</h2>
+  <h2 className="text-3xl font-bold">Let&apos;s Work Together</h2>
   <div className="btns">
   <Btn main={true} text="Call Now" link="https://wa.me/9841528597"/>
 
