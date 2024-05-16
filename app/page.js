@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <>
-      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:min-h-[60vh] min-h-[85vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
+      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:max-h-[60vh] min-h-[85vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
         <h1 className="ht text-[3.5rem] tracking-wider font-light font-sans text-gray-900  ">Unleash Your Digital Potential with Us</h1>
         <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business&apos;s online presence with sk digital agency</p>
         <Btn  text="connect with us" link="https://wa.me/9841528597"/>
