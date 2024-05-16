@@ -5,7 +5,7 @@ import logo from '@/public/lg.png'
 import Btn from './Btn'
 const Navbar = () => {
   return (
-    <nav className='flex justify-between mx-12 items-center w-full fixed bg-slate-50 top-0  z-50'>
+    <nav className='flex justify-between mx-6 mr-6 items-center w-full fixed bg-slate-50 top-0  z-50'>
       <div className="logo">
         <Image src={logo} width={100} alt='logo' />
       </div>
