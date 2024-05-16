@@ -7,72 +7,104 @@ import { useEffect, useRef } from "react";
 import ill from "@/public/ill.png";
 import Btn from "./Components/Btn";
 import './globals.css';
+import LocomotiveScroll from 'locomotive-scroll';
 
 import social from "@/public/icons/social.svg";
 import design from '@/public/icons/design.svg';
 import management from '@/public/icons/management.svg';
+import SplitType from "split-type";
 
 export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger); 
+
+    const scroll = new LocomotiveScroll();
+
+  
   });
 
+
+
   useGSAP(() => {
-    gsap.from(".ht", {
-      scrollTrigger: {
-        trigger: '.ht',
-        scroller: 'body'
-      },
-      opacity: 0,
-      yPercent: 30,
-      stagger: 0.5,
-    });
+    const text = SplitType.create('.ht')
+    var char = text.words
+   gsap.from(char, {
+    scrollTrigger: {
+      trigger: '.ht',
+      scroller: 'body',
+      toggleActions: "restart reset restart reset",
 
-    gsap.from(".about-t", {
-      scrollTrigger: {
-        trigger: '.right',
-        scroller: 'body',
-      },
-      opacity: 0,
-      duration: 0.5,
-      yPercent: 30,
-      stagger: 0.6,
-    });
+    },
+    opacity: 0,
+    yPercent: 100,
+    duration: 0.2,
+    stagger: 0.0850,
+   })
 
-    gsap.from(".image", {
-      scrollTrigger: {
-        trigger: '.image',
-        scroller: 'body'
-      },
-      xPercent: 150,
-      delay: 1,
-    });
 
-    gsap.from(".card", {
-      scrollTrigger: {
-        trigger: '.card',
-        scroller: 'body',
-      },
-      opacity: 0,
-      yPercent: 20,
-      duration: 0.2,
-      stagger: 0.6,
-    });
+   gsap.from('.about-text', {
+    scrollTrigger: {
+      trigger: '.about',
+      toggleActions: "restart reset restart reset",
+      scroller: 'body',
+    },
+    
+    opacity: 0,
+    duration: 1.6,
+    yPercent: 250,
+   })
+
+   gsap.from('.service-text', {
+    scrollTrigger: {
+      trigger: '.service-text',
+      scroller: 'body',
+      toggleActions: "restart reset restart reset",      
+    },
+    
+    opacity: 0,
+    duration: 1.6,
+    yPercent: 250,
+   })
+
+   gsap.from('.work-text', {
+    scrollTrigger: {
+      trigger: '.work-text',
+      scroller: 'body',
+      toggleActions: "restart reset restart reset",
+
+      
+    },
+    
+    opacity: 0,
+    duration: 1.4,
+    yPercent: 150,
+   })
+
+   gsap.from(".card", {
+    scrollTrigger: {
+      trigger: "card",
+      scroller: 'body',
+    },
+    xPercent: -100,
+    duration: 0.9,
+    stagger: 0.5,
+    opacity: 0,
+   })
+
   });
 
   return (
     <>
-      <section className="hero min-h-screen flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
-        <h1 className="ht text-[2.7rem] tracking-wider font-normal font-sans text-gray-700  ">Elevate Your Online Presence with Our Unique Designs</h1>
-        <p className="ht text-[1.2rem] max-w-[700px] font-light text-gray-800 ">We help businesses boost their sales and digital presence by providing them with website and social media management.</p>
-        <div className="circleLinear min-w-96 min-h-96 rounded-full blur-[150px] -z-50   absolute bg-emerald-400"></div>
-        <Btn  text="Become our Client"/>
+      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:min-h-[70vh] min-h-[85vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
+        <h1 className="ht text-[3.5rem] tracking-wider font-light font-sans text-gray-900  ">Unleash Your Digital Potential with Us</h1>
+        <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business online presence with sk digital agency</p>
+        <Btn  text="connect with us" link="https://wa.me/9841528597"/>
         <Image src={ill} width={600} className="image"/>
       </section>
 
-      <section className="about min-h-screen flex  flex-col md:flex-row justify-evenly items-center text-center">
+      <section  data-scroll data-scroll-speed="0.1" id="about" className="about  2xl:min-h-[50vh]  min-h-[80vh] flex  flex-col md:flex-row justify-evenly items-center text-center">
         <div className="left">
-          <h2 className="about-text text-2xl font-medium">About</h2>
+          <h2 className="about-text dot text-3xl font-semibold">About</h2>
         </div>
         <div className="right flex flex-col gap-8">
           <h2 className="about-t text-4xl font-medium">Sk Digital Agency</h2>
@@ -80,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services min-h-screen flex justify-evenly mb-16 flex-col-reverse gap-4 items-center md:items-stretch md:flex-row">
+      <section data-scroll data-scroll-speed="0.5" id="services" className="services  2xl:min-h-[50vh] min-h-[80vh] flex justify-evenly mb-16 flex-col-reverse text-center gap-4 items-center md:items-stretch md:flex-row">
         <div className="left flex flex-col gap-16">
           <div className="card border-b border-black rounded-none pb-2">
             <h2 className="text-2xl font-light pb-5">Website Design</h2>
@@ -103,12 +135,12 @@ export default function Home() {
           </div>
         </div>
         <div className="right">
-          <h2 className="about-text text-2xl font-medium">Services</h2>
+          <h2 className="service-text dot text-3xl font-semibold">Services</h2>
         </div>
       </section>
 
-      <section className="How-we-work min-h-screen flex flex-col justify-evenly items-center">
-        <h2 className="text-2xl font-medium">How we work</h2>
+      <section data-scroll data-scroll-speed="0.5" id="work" className=" 2xl:min-h-[50vh] mb-20 How-we-work min-h-[70vh] flex flex-col justify-evenly items-center">
+        <h2 className="work-text text-3xl font-bold">How we work</h2>
         <div className="items flex flex-row overflow-x-hidden flex-wrap gap-5 justify-center items-center">
           <div className="item min-w-[300px] border-2 p-3">
             <h1 className="text-3xl font-semibold">01</h1>
@@ -141,6 +173,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+  <section className="Hire Us flex flex-col gap-12 min-h-[28vh] text-center">
+  <h2 className="text-3xl font-bold">Let's Work Together</h2>
+  <div className="btns">
+  <Btn main={true} text="Call Now" link="https://wa.me/9841528597"/>
+
+  </div>
+
+  </section>
+
     </>
   );
 }
