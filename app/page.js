@@ -89,14 +89,14 @@ export default function Home() {
 
   return (
     <>
-      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:max-h-[50vh] min-h-[75vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
+      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:max-h-[50vh] min-h-[80vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
         <h1 className="ht text-[3.5rem] tracking-wider font-light font-sans text-gray-900  ">Unleash Your Digital Potential with Us</h1>
         <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business&apos;s online presence with sk digital agency</p>
         <Btn  text="connect with us" link="https://wa.me/9841528597"/>
         <Image src={ill} width={600} className="image" alt="image"/>
       </section>
 
-      <section  data-scroll data-scroll-speed="0.1" id="about" className="about  flex  flex-col md:flex-row justify-evenly items-center text-center">
+      <section  data-scroll data-scroll-speed="0.1" id="about" className="about min-h-[60vh]  flex  flex-col md:flex-row justify-evenly items-center text-center">
         <div className="left">
           <h2 className="about-text dot text-3xl font-semibold">About</h2>
         </div>
