@@ -82,21 +82,20 @@ export default function Home() {
     opacity: 0,
     delay: 1
    })
-
-  
   });
+
+
 
 
   return (
     <>
-      <section data-scroll data-scroll-speed="0.1"  id="home" className="hero 2xl:max-h-[50vh] min-h-[80vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
-        <h1 className="ht text-[3.5rem] tracking-wider font-light font-sans text-gray-900  ">Unleash Your Digital Potential with Us</h1>
+      <section   id="home" className="hero 2xl:max-h-[50vh] min-h-[80vh] flex justify-center items-center flex-col gap-12 text-center mt-28 pt-12 pb-9  text-gray-900  ">
+        <h1 className="ht text-[3.5rem] tracking-wider font-extrabold text-gray-600 hover:text-gray-900 transition-colors duration-500  ">Unleash Your Digital Potential with Us</h1>
         <p className="text-[1.8rem] max-w-[700px] font-extralight text-gray-800 ">boost your business&apos;s online presence with sk digital agency</p>
         <Btn  text="connect with us" link="https://wa.me/9841528597"/>
-        <Image src={ill} width={600} className="image" alt="image"/>
       </section>
 
-      <section  data-scroll data-scroll-speed="0.1" id="about" className="about min-h-[75vh]  flex  flex-col md:flex-row justify-evenly items-center text-center">
+      <section   id="about" className="about min-h-[75vh]  flex  flex-col md:flex-row justify-evenly items-center text-center">
         <div className="left">
           <h2 className="about-text dot text-3xl font-semibold">About</h2>
         </div>
@@ -106,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section data-scroll data-scroll-speed="0.5" id="services" className="services  2xl:min-h-[50vh] min-h-[80vh] flex justify-evenly mb-16 flex-col-reverse text-center gap-4 items-center md:items-stretch md:flex-row">
+      <section id="services" className="services  2xl:min-h-[50vh] min-h-[80vh] flex justify-evenly mb-16 flex-col-reverse text-center gap-4 items-center md:items-stretch md:flex-row">
         <div className="left flex flex-col gap-16">
           <div className="card border-b border-black rounded-none pb-2">
             <h2 className="text-2xl font-light pb-5">Website Design</h2>
@@ -133,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section data-scroll data-scroll-speed="0.5" id="work" className=" 2xl:min-h-[50vh] mb-20 How-we-work min-h-[70vh] flex flex-col justify-evenly items-center">
+      <section  id="work" className=" 2xl:min-h-[50vh] mb-20 How-we-work min-h-[70vh] flex flex-col justify-evenly items-center">
         <h2 className="work-text text-3xl font-bold mb-4">How we work</h2>
         <div className="items flex flex-row overflow-x-hidden flex-wrap gap-5 justify-center items-center">
           <div className="item min-w-[300px] border-2 p-3">
