@@ -41,7 +41,7 @@ export default function Home() {
     },
     
     opacity: 0,
-    duration: 1.6,
+    duration: 1,
     yPercent: 250,
    })
 
@@ -53,7 +53,7 @@ export default function Home() {
     },
     
     opacity: 0,
-    duration: 1.6,
+    duration: 1,
     yPercent: 250,
    })
 
@@ -67,7 +67,7 @@ export default function Home() {
     },
     
     opacity: 0,
-    duration: 1.4,
+    duration: 1,
     yPercent: 150,
    })
 
