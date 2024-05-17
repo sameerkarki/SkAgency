@@ -41,7 +41,7 @@ export default function Home() {
     },
     
     opacity: 0,
-    duration: 1,
+    duration: 1.2,
     yPercent: 250,
    })
 
